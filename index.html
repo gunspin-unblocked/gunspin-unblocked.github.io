@@ -100,6 +100,68 @@
 <!-- New games section -->
 <!-- <h3 class="section-title">Latest Games</h3> -->
 
+
+   <style>
+        .game-container {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #000;
+            position: relative;
+        }
+        .player {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            position: absolute;
+            top: 90px;
+            left: 90px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+    <a href="./game/evilglitch.html" title="Evil Glitch">
+        <div class="game-item">
+            <div class="list-game">
+                <div class="list-thumbnail"><img alt="Evil Glitch" class="lazyload" src="img/56.webp" /></div>
+            </div>
+        </div>
+    </a>
+</div>
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+    <div class="game-container">
+        <div class="player" id="player"></div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('keydown', function(event) {
+        const player = document.getElementById('player');
+        const step = 10;
+        let top = parseInt(window.getComputedStyle(player).getPropertyValue('top'));
+        let left = parseInt(window.getComputedStyle(player).getPropertyValue('left'));
+
+        switch (event.key) {
+            case 'ArrowUp':
+                if (top > 0) player.style.top = top - step + 'px';
+                break;
+            case 'ArrowDown':
+                if (top < 180) player.style.top = top + step + 'px';
+                break;
+            case 'ArrowLeft':
+                if (left > 0) player.style.left = left - step + 'px';
+                break;
+            case 'ArrowRight':
+                if (left < 180) player.style.left = left + step + 'px';
+                break;
+        }
+    });
+</script>
+
+</body>
+
 <div class="row grid-container">
   <div class="col-lg-2 col-md-4 col-6 grid-3">
     <a href="./game/ducklife.html" title="Duck Life">
