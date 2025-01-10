@@ -186,3 +186,4 @@ function initializeProjectFilter() {
         return false;
     });
 }
+
