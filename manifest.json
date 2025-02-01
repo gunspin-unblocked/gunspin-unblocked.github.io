@@ -1,11 +1,11 @@
 {
-  "name": "Classroom 6x",
-  "short_name": "Unblocked Games 6x",
-  "start_url": "https://6x-classrooms.github.io/",
+  "name": "Gunspin Unblocked",
+  "short_name": "Gunspin",
+  "start_url": "https://gunspin-unblocked.github.io/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
-  "description": "Play Unblocked Games Premium at School or Office.",
+  "description": "Play Gunspin Unblocked game at School or Office.",
   "icons": [
     {
       "src": "images/icon/favicon.png",
